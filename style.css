@@ -1,0 +1,229 @@
+/* [Master Stylesheet - v1.0] */
+/* =========== Index of CSS ===========
+:: 1.0 Import Fonts
+:: 2.0 Import All CSS 
+:: 3.0 Base CSS
+    :: 3.1.0 Spacing
+    :: 3.2.0 Height
+    :: 3.3.0 Section Padding
+    :: 3.4.0 Section Heading
+    :: 3.5.0 Preloader
+    :: 3.6.0 Miscellaneous
+    :: 3.7.0 ScrollUp
+    :: 3.8.0 Musica Button
+:: 4.0 Header Area CSS
+:: 5.0 Hero Slides Area
+:: 6.0 About Us CSS
+:: 7.0 Career Timeline CSS
+:: 8.0 Upcoming Shows Area CSS
+:: 9.0 Featured Shows Area CSS
+:: 10.0 Search Your Shows Area CSS
+:: 11.0 Music Player Area CSS
+:: 12.0 Featured Album Area CSS
+:: 13.0 Music Artists Area CSS
+:: 14.0 Services Area CSS
+:: 15.0 Footer Area CSS
+:: 16.0 Breadcumb Area CSS
+:: 17.0 CTA Area CSS
+:: 18.0 Blog Area CSS
+:: 19.0 Skills Area CSS
+:: 20.0 Contact Area CSS
+:: 21.0 Elements Area CSS
+    :: 21.1.0 Single Cool Facts CSS
+    :: 21.2.0 Accordians Area CSS
+    :: 21.3.0 Tabs Area CSS
+*/
+/* :: 2.0 Import All CSS */
+
+@import url(css/owl.carousel.min.css);
+
+/* :: 3.5.0 Preloader */
+.preloader {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; }
+  .preloader .circle-preloader {
+    -webkit-animation: spin 900ms infinite linear;
+    animation: spin 900ms infinite linear; }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+/* :: 3.6.0 Miscellaneous */
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* :: 5.0 Hero Slides Area */
+.hero-area {
+  position: relative;
+  z-index: 1; }
+
+.slide-down {
+  position: absolute;
+  bottom: 15px;
+  z-index: 100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: pointer; }
+  .slide-down h6 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .slide-down .line {
+    width: 3px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    -webkit-animation: slide_down 2s linear infinite;
+    animation: slide_down 2s linear infinite; }
+
+@-webkit-keyframes slide_down {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slide_down {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.hero-slides {
+  position: relative;
+  z-index: 1; }
+
+.single-hero-slide {
+  width: 100%;
+  height: 950px;
+  position: relative;
+  z-index: 1;
+  padding: 0 30px;
+  overflow: hidden; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-slide {
+      height: 700px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide {
+      height: 650px; } }
+  @media only screen and (max-width: 767px) {
+    .single-hero-slide {
+      height: 600px; } }
+  .single-hero-slide::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: ''; }
+  .single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .single-hero-slide .big-text {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 600px;
+    z-index: -10;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-hero-slide .big-text {
+        font-size: 350px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-hero-slide .big-text {
+        font-size: 300px; } }
+    @media only screen and (max-width: 767px) {
+      .single-hero-slide .big-text {
+        font-size: 120px; } }
+  .single-hero-slide .hero-slides-content {
+    display: inline-block; }
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 172px;
+      color: #ffffff;
+      margin-bottom: 0;
+      font-weight: 600;
+      text-shadow: 18px 0 0 rgba(255, 45, 109, 0.2);
+      display: inline-block; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 130px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 60px; } }
+      .single-hero-slide .hero-slides-content h2 span {
+        position: absolute;
+        top: 0;
+        left: -18px;
+        font-size: 172px;
+        color: rgba(132, 57, 255, 0.2);
+        margin-bottom: 0;
+        font-weight: 600;
+        text-shadow: none;
+        z-index: -5; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-hero-slide .hero-slides-content h2 span {
+            font-size: 130px; } }
+        @media only screen and (max-width: 767px) {
+          .single-hero-slide .hero-slides-content h2 span {
+            font-size: 60px; } }
+    .single-hero-slide .hero-slides-content p {
+      text-align: right;
+      font-size: 60px;
+      margin-top: -70px;
+      color: #ffffff;
+      font-family: "Allura", cursive; }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content p {
+          font-size: 30px;
+          margin-top: -20px; } }
+
+.hero-slides .owl-item.active .single-hero-slide .slide-img {
+  -webkit-animation: slide 15s linear infinite;
+  animation: slide 15s linear infinite; }
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
