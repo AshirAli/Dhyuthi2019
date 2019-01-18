@@ -88,9 +88,11 @@
         url('HarryP.woff') format('woff');
     	font-weight: normal;
     	font-style: normal;
+    	background-size:cover;
 
  	}
-
+.bg-register{background-color:#000000!important;background-image:url(../img/22921.jpg);background-repeat:no-repeat;background-size:cover;
+}
  p{line-height:1.75}
  	a{color:#E6BE8A}
  	a:hover{color:#fec503}
