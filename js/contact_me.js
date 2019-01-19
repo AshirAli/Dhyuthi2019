@@ -1,6 +1,6 @@
 $(function() {
 
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+  /*$("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
@@ -69,7 +69,7 @@ $(function() {
   });
 });
 
-/*When clicking on Full hide fail/success boxes */
+/*When clicking on Full hide fail/success boxes 
 $('#name').focus(function() {
-  $('#success').html('');
+  $('#success').html('');*/
 });
