@@ -70,50 +70,51 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
-		<img class="logos_add logos_left" src="img/logos/sb_logo.png" alt="">
-    	 <img  class="logos_add logos_right" src="img/logos/ieee_logo.png" alt="">
-        <div class="intro-text">
-          <img class="img-fluid logo" src="img/logos/logo_edited.png" alt="">
-          <BR>&nbsp
-          <div class="harry-font text-uppercase">DHYUTHI 2.0</div>
-          <div class="intro-lead-in"><h6>9th 10th February 2019</h6></div>
+      	<div class="container">
+			<img class="logos_add logos_left" src="img/logos/sb_logo.png" alt="">
+    		<img  class="logos_add logos_right" src="img/logos/ieee_logo.png" alt="">
+        	<div class="intro-text">
+	          	<img class="img-fluid logo-glow" src="img/logos/logo_edited.png" alt="">
+	          	<BR>&nbsp
+	          	<div class="harry-font font-glow text-uppercase">DHYUTHI 2.0</div>
+	          	<div class="intro-lead-in"><h6>9th 10th February 2019</h6></div>
 
-          <!-- COUNTDOWN -->
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">
-          <h4 class="section-subheading text-muted" id="demo"></h4></a>
+	          	<!-- COUNTDOWN -->
+	          	<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">
+	          		<h4 class="section-subheading text-muted" id="demo"></h4>
+	          	</a>
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Feb 9, 2019 00:00:00").getTime();
 
-					<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Feb 9, 2019 00:00:00").getTime();
+					// Update the count down every 1 second
+					var x = setInterval(function() {
 
-				// Update the count down every 1 second
-				var x = setInterval(function() {
-
-				  // Get todays date and time
-				  var now = new Date().getTime();
-				    
-				  // Find the distance between now and the count down date
-				  var distance = countDownDate - now;
-				    
-				  // Time calculations for days, hours, minutes and seconds
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				    
-				  // Output the result in an element with id="demo"
-				  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				  + minutes + "m " + seconds + "s ";
-				    
-				  // If the count down is over, write some text 
-				  if (distance < 0) {
-				    clearInterval(x);
-				    document.getElementById("demo").innerHTML = "EXPIRED";
-				  }
-				}, 1000);
+					  // Get todays date and time
+					  var now = new Date().getTime();
+					    
+					  // Find the distance between now and the count down date
+					  var distance = countDownDate - now;
+					    
+					  // Time calculations for days, hours, minutes and seconds
+					  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+					    
+					  // Output the result in an element with id="demo"
+					  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+					  + minutes + "m " + seconds + "s ";
+					    
+					  // If the count down is over, write some text 
+					  if (distance < 0) {
+					    clearInterval(x);
+					    document.getElementById("demo").innerHTML = "EXPIRED";
+					  }
+					}, 1000);
 				</script>
-        </div>
+			</div>
+    	</div>
     </header>
 
    
@@ -142,11 +143,30 @@
             </a>
             <div class="portfolio-caption" style="background-color: black">
               <h4 class="section-subheading text-muted">Workshop 1</h4>
-              <h6 class="section-subheading text-muted">Big Data</h6>
+              <h6 class="section-subheading text-muted">BIG DATA</h6>
+            </div>
+          </div>
+      
+          <!-- Workshop 1 End-->
+          
+          	<!-- Workshop 2 -->
+         
+          <div class=" col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption" style="background-color: black">
+              <h4 class="section-subheading text-muted">Workshop 2</h4>
+              <h6 class="section-subheading text-muted">BLOCKCHAIN</h6>
             </div>
           </div>
       	</div>
-          <!-- Workshop 1 End-->
+          <!-- Workshop 2 End-->
 
 
           <div class="row">
@@ -164,7 +184,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
           	<a href = "https://www.yepdesk.com/dhyuthi-2-0" target="_blank">
-            <h6 class="harry-font">Lumos<BR>(We mean Register!)</h6>
+            <h6 class="harry-font"><U>Lumos!</U><BR>(We mean Register!)</h6>
         	</a>
             <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
           </div>
@@ -351,7 +371,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
           	<a href = "https://www.yepdesk.com/dhyuthi-2-0" target="_blank">
-            <h6 class="harry-font">Lumos<BR>(We mean Register!)</h6>
+            <h6 class="harry-font"><U>Lumos!</U><BR>(We mean Register!)</h6>
         	</a>
             <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
           </div>
@@ -424,9 +444,16 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase harry-font">Workshop 1</h2>
-                  <h4 class="section-subheading text-muted">Big Data <BR> Making the World smaller!</h4>
+                  <h4 class="section-subheading text-muted">BIG DATA<BR></h4><h6 class="text-muted"> Making the World smaller!</h6>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p class="text-muted">One of the hottest and most in-demand skills of the coming years, <b>Big Data</b> refers to technologies and initiatives that involve data that is too diverse, fast-changing or massive for conventional technologies, skills and infra- structure to address efficiently. For example, using Big Data, governments and even Google can detect and track the emergence of disease outbreaks via social media signals. Oil and gas companies can take the output of sensors in their drilling equipment to make more efficient and safer drilling decisions.</p>
+                  <p class="text-muted" style = "text-align: justify;">One of the hottest and most in-demand skills of the coming years, <b>Big Data</b> refers to technologies and initiatives that involve data that is too diverse, fast-changing or massive for conventional technologies, skills and infra- structure to address efficiently. For example, using Big Data, governments and even Google can detect and track the emergence of disease outbreaks via social media signals. Oil and gas companies can take the output of sensors in their drilling equipment to make more efficient and safer drilling decisions.</p>
+                    <!-- Speaker start -->
+				        
+				            <div class="team-member">
+				              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+				            </div>
+				      	
+				    <!-- speaker end -->
                   <ul class="list-inline">
                     <li><h6 class="text-muted">Handled By: <b>Mr. Deepak TV</b></h6> </li>
                     <li><h6 class="text-muted">Head of  Quality and Automation</h6></li>
@@ -436,6 +463,8 @@
                     <a href = "https://www.yepdesk.com/dhyuthi-2-0" target="_blank"><h6 class="section-subheading text-muted">Register Here</h6></a>
                   </button>
                   <br><br>
+
+                
 
                 </div>
               </div>
@@ -448,10 +477,10 @@
     <!-- Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-light">
           <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+            <div class="lr" style="background-color: white">
+              <div class="rl" style="background-color: white"></div>
             </div>
           </div>
           <div class="container">
@@ -459,18 +488,20 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase harry-font">Workshop 2</h2>
+                  <h4 class="section-subheading text-muted">BLOCKCHAIN <BR></h4><h6 class="text-muted"> Demystifying 'the Blockchain'</h6>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">	
+                  <p class="text-muted" style = "text-align: justify;"><B>Blockchain</B> is this year's buzzword - but can it outlive the hype? The open-source ledger behind bitcoin is touted as revolutionary for everything from banking to health, but the jury is still out. In this beginner friendly workshop we demystify the hype of Blockchain by understanding how those words - block and chain tie up together, and then dive head first deep into the most popular Blockchain platform - <B>Ethereum</B> and create cryptocurrency out of thin air! You also learn how to create your own smart contracts and deploy them on the Cloud.</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li><h6 class="text-muted">Handled By: <b>Binish Moulana</b></h6> </li>
+                    <li><h6 class="text-muted">Cloud Architect</h6></li>
+                    <li><h6 class="text-muted">Finastra</h6></li>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
+                  <button class="btn btn-primary" type="button">
+                    <a href = "https://www.yepdesk.com/dhyuthi-2-0" target="_blank"><h6 class="section-subheading text-muted">Register Here</h6></a>
+                  </button>
+                  <br><br>
+
                 </div>
               </div>
             </div>
