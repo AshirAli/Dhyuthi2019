@@ -36,6 +36,14 @@
 /* :: 2.0 Import All CSS */
 
 @import url(css/owl.carousel.min.css);
+.ml {
+  position: relative;
+  border-radius: 6%;
+  border: 0px solid black !important;
+  background: linear-gradient(to bottom, #004FF9, #FFF94C);
+  padding: 6px;
+}
+
 
 /* :: 3.5.0 Preloader */
 .preloader {
